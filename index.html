@@ -17,7 +17,7 @@
             accept="image/*"
             capture="user" />
 
-        <label for="picture">Take a picture using back facing camera:</label>
+        <label for="picture">*: Take a picture using back facing camera:</label>
         <input
             type="file"
             id="picture"
@@ -28,7 +28,9 @@
         <label for="soundFile">What does your voice sound like?:</label>
         <input type="file" id="soundFile" capture="user" accept="audio/*" />
 
-        <label for="videoFile">Upload a video:</label>
+        <label for="videoFile"
+            >*: Upload a video using back facing camera:</label
+        >
         <input
             type="file"
             id="videoFile"
@@ -36,5 +38,6 @@
             accept="video/*" />
         <label for="imageFile">Upload a photo of yourself:</label>
         <input type="file" id="imageFile" capture="user" accept="image/*" />
+        <p>* doesn't work on every device, feel free to play with these</p>
     </body>
 </html>

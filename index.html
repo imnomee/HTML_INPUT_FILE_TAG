@@ -7,9 +7,16 @@
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
-        <label for="pc_file">Upload from PC / Mobile</label>
+        <!-- File upload from PC or Mobile -->
+        <label for="pc_file">Upload from PC / Mobile:</label>
         <input type="file" name="file" id="pc_file" />
-        <label for="selfie">Take a picture of your face:</label>
+
+        <!-- Record sound using microphone -->
+        <label for="soundFile">Record using Microphone:</label>
+        <input type="file" id="soundFile" capture="user" accept="audio/*" />
+
+        <!-- Capture image using the front-facing camera -->
+        <label for="selfie">Take a selfie:</label>
         <input
             type="file"
             id="selfie"
@@ -17,7 +24,16 @@
             accept="image/*"
             capture="user" />
 
-        <label for="picture">*: Take a picture using back facing camera:</label>
+        <!-- Capture video using the front-facing camera -->
+        <label for="selfieFile"
+            >Upload a video using the front-facing camera:</label
+        >
+        <input type="file" id="selfieFile" capture="user" accept="video/*" />
+
+        <!-- Capture image using the rear-facing camera -->
+        <label for="picture"
+            >Take a picture using the rear-facing camera:</label
+        >
         <input
             type="file"
             id="picture"
@@ -25,19 +41,20 @@
             accept="image/*"
             capture="environment" />
 
-        <label for="soundFile">What does your voice sound like?:</label>
-        <input type="file" id="soundFile" capture="user" accept="audio/*" />
-
+        <!-- Capture video using the rear-facing camera -->
         <label for="videoFile"
-            >*: Upload a video using back facing camera:</label
+            >Upload a video using the rear-facing camera:</label
         >
         <input
             type="file"
             id="videoFile"
             capture="environment"
             accept="video/*" />
-        <label for="imageFile">Upload a photo of yourself:</label>
-        <input type="file" id="imageFile" capture="user" accept="image/*" />
-        <p>* doesn't work on every device, feel free to play with these</p>
+
+        <!-- Note about device compatibility -->
+        <p>
+            * These features may not work on every device. Feel free to
+            experiment.
+        </p>
     </body>
 </html>

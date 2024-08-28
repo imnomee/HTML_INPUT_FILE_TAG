@@ -6,13 +6,16 @@
         <title>Input File Tag Secrets - Nomee</title>
     </head>
     <body>
-        <!-- PC Laptop -->
+        <!-- File upload from PC or Mobile -->
         <label for="pc_file">Upload from PC / Mobile</label>
         <br />
         <input type="file" name="file" id="pc_file" />
         <br />
-        <!-- Mobile Devices Front Cam -->
-        <label for="mobile_capture_front">Capture Mobile Front Camera</label>
+
+        <!-- Capture from Mobile Front Camera -->
+        <label for="mobile_capture_front"
+            >Capture from Mobile Front Camera</label
+        >
         <br />
         <input
             type="file"
@@ -20,8 +23,9 @@
             id="mobile_capture_front"
             capture="user" />
         <br />
-        <!-- Mobile Devices Rear Cam -->
-        <label for="mobile_capture_rear">Capture Mobile Rear Camera</label>
+
+        <!-- Capture from Mobile Rear Camera -->
+        <label for="mobile_capture_rear">Capture from Mobile Rear Camera</label>
         <br />
         <input
             type="file"
@@ -29,9 +33,10 @@
             id="mobile_capture_rear"
             capture="environment" />
         <br />
-        <!-- Mobile Devices Rear Cam for Images-->
-        <label for="mobile_capture_rear_img"
-            >Capture Mobile Rear Camera for Images</label
+
+        <!-- Capture image from Mobile Rear Camera -->
+        <label for="mobile_capture_rear_image"
+            >Capture Image from Mobile Rear Camera</label
         >
         <br />
         <input
@@ -41,17 +46,44 @@
             capture="environment"
             accept="image/*" />
         <br />
-        <!-- Mobile Devices front Cam for Images-->
-        <label for="mobile_capture_front_img"
-            >Capture Mobile front Camera for images</label
+
+        <!-- Capture image from Mobile Front Camera -->
+        <label for="mobile_capture_front_image"
+            >Capture Image from Mobile Front Camera</label
         >
         <br />
         <input
             type="file"
             name="file"
             id="mobile_capture_front_image"
-            capture="environment"
+            capture="user"
             accept="image/*" />
+        <br />
+
+        <!-- Capture video from Mobile Front Camera -->
+        <label for="mobile_capture_front_vid"
+            >Capture Video from Mobile Front Camera</label
+        >
+        <br />
+        <input
+            type="file"
+            name="file"
+            id="mobile_capture_front_vid"
+            capture="user"
+            accept="video/*" />
+        <br />
+
+        <!-- Capture video from Mobile Rear Camera -->
+        <label for="mobile_capture_rear_vid"
+            >Capture Video from Mobile Rear Camera</label
+        >
+        <br />
+        <input
+            type="file"
+            name="file"
+            id="mobile_capture_rear_vid"
+            capture="environment"
+            accept="video/*" />
         <br />
     </body>
 </html>
